@@ -7,8 +7,8 @@ spec:
   - name: service-name
   metrics:
   - name: success-rate
-    interval: 20s
-    count: 3
+    interval: 5s
+    count: 5
     successCondition: result[0] >= 0.95
     # failureCondition: result[0] < 0.50
     failureLimit: 1
