@@ -16,13 +16,19 @@ spec:
             - primary # At least one route is required
       steps:
       - setWeight: 20
-      - pause: {duration: 10}
+      - pause: {duration: 60}
+      - analysis:
+          templates:
+          - templateName: success-rate
+          args:
+          - name: service-name
+            value: rollouts-demo-canary.default.svc.cluster.local
       - setWeight: 40
-      - pause: {duration: 10}
+      - pause: {duration: 20}
       - setWeight: 60
-      - pause: {duration: 10}
+      - pause: {duration: 20}
       - setWeight: 80
-      - pause: {duration: 10}
+      - pause: {duration: 30}
   revisionHistoryLimit: 2
   selector:
     matchLabels:
@@ -35,7 +41,7 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: argoproj/rollouts-demo:purple
+        image: argoproj/rollouts-demo:yellow
         ports:
         - name: http
           containerPort: 8080
