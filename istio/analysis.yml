@@ -8,7 +8,7 @@ spec:
   metrics:
   - name: success-rate
     interval: 5s
-    count: 5
+    count: 20
     successCondition: result[0] >= 0.95
     # failureCondition: result[0] < 0.50
     failureLimit: 1
