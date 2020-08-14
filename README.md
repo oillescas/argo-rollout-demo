@@ -159,7 +159,7 @@ Y aplicamos de la misma manera, mergeamos la rama feature/purple-auto en master 
 | CLI  | WEB |
 | ------------- | ------------- |
 | ![ArgoCD cli](images/image13.png)  | ![ArgoCD cli](images/image22.png)  |
-| ![ArgoCD cli](images/imagE14.png)  | ![ArgoCD cli](images/image9.png)  |
+| ![ArgoCD cli](images/image14.png)  | ![ArgoCD cli](images/image9.png)  |
 | ![ArgoCD cli](images/image3.png)  | ![ArgoCD cli](images/image6.png)  |
 
 ### Istio
