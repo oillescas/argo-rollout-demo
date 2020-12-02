@@ -7,7 +7,7 @@ Aunque Argo rollouts soporta BlueGreen y Canary deployment en estos ejemplo se c
 
 ## Instalación
 
-### ArgoCD
+### ArgoCD
 
 ```shell
 kubectl create namespace argocd
@@ -71,7 +71,7 @@ Argo Rollouts expande el concepto de ‘Deployment’ con el concepto de ‘Roll
 
 Partiendo de esta base nos metemos en el código, lo ideal sería hacer un fork del repositorio y ir haciendo los merges de las ramas features en master para ir actualizando el cluster kubernetes con argoCD
 
-### Nginx Ingress
+### Nginx Ingress
 
 Empezaremos creando la aplicación en argoCD mediante la aplicación web.
 ![ArgoCD UI](images/image5.png)
